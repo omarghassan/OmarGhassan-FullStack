@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <fieldset>
         <legend>Personal Details</legend>
-        
-        <label for="Salutataion">Salutataion</label>
-        <select name="Salutataion" id="Salutataion">
-            <option value="None" selected disabled>-- None --</option>
-            <option value="One">One</option>
-            <option value="Two"></option>
-        </select>
-        <br> <br>
 
-        
+        <form>
+            <label for="Salutataion">Salutataion</label>
+            <select name="Salutataion" id="Salutataion">
+                <optgroup label="First Group">
+                    <option value="None" selected disabled>-- None --</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                </optgroup>
+
+                <optgroup label="Second Group">
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </optgroup>
+
+            </select>
+            <br> <br>
+
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your First Name"> <br> <br>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name"> <br> <br>
+
+            <label for="gender">Gender</label> <br>
+            <input type="radio" name="gender" id="gender" value="male"> Male <br>
+            <input type="radio" name="gender" id="gender" value="female"> Female <br>
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth">
+            <br><br>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            <br><br>
+
+            <label for="values">Values</label>
+            <input list="values" name="values">
+            <datalist id="values">
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+                <option value="Brave"></option>
+            </datalist>
+            <br><br>
+
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" min="1" max="17" step="1">
+            <br><br>
+
+            <label for="to-do-list">To Do List</label> <br>
+            <input type="checkbox" name="to-do-list" id="to-do-list" value="value1"> Value 1 <br>
+            <input type="checkbox" name="to-do-list" id="to-do-list" value="value2"> Value 2 <br>
+            <input type="checkbox" name="to-do-list" id="to-do-list" value="value3"> Value 3 <br>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
     </fieldset>
 </body>
+
 </html>
