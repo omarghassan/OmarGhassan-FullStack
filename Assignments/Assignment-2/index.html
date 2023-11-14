@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- method="get" action="confirm.php" -->
+        <h1>Your Information</h1>
+        <label for="fullName">Your Name</label>
+        <input type="text" name="fullName" id="fullName">
+        <br><br>
+
+        <label for="deliveryAddress">Delivery Address</label> <br>
+        <textarea name="deliveryAddress" id="deliveryAddress" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <h1>Your Order</h1>
+
+        <label for="pizzaTopping">Pizza Topping:</label>
+        <input type="radio" name="pizzaTopping" id="pizzaTopping" value="supreme"> Supreme
+        <input type="radio" name="pizzaTopping" id="pizzaTopping" value="vegetarian"> Vegetarian
+        <input type="radio" name="pizzaTopping" id="pizzaTopping" value="hawaaiian"> Hawaaiian
+        <br><br>
+
+        <label for="extra">Extra:</label>
+        <input type="checkbox" name="extra" id="extra" value="cheese"> Cheese
+        <input type="checkbox" name="extra" id="extra" value="olives"> Olives
+        <input type="checkbox" name="extra" id="extra" value="salami"> Salami
+        <br><br>
+
+        <label for="sauce">Pizza Sauce:</label>
+        <select name="sauce" id="sauce">
+            <option value="None" disabled>Select Sauce</option>
+            <option value="1">Tomamto</option>
+            <option value="2">Barbecue</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Order">
+    </form>
+</body>
+</html>
