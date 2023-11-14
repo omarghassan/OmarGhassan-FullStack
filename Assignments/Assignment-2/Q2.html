@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Your Address</legend>
+
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName"> <br>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName"> <br>
+
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street"> <br>
+
+            <label for="city">City</label>
+            <input type="text" name="city" id="city"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            <label for="biograghy">Biograghy</label>
+            <textarea name="biograghy" id="biograghy" cols="30" rows="10"></textarea>
+            <br>
+
+            <label for="selectImage">Image</label>
+            <input type="file" name="selectImage" id="selectImage">
+            <br>
+
+            <label for="ageGroup">Age Group</label>
+            <select name="ageGroup" id="ageGroup">
+                <option value="None">-- Select --</option>
+                <option value="1">0 to 9 years</option>
+                <option value="2">10 to 19 years</option>
+                <option value="3">20 to 29 years</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+
+            <label for="hobbies">Hobbies</label>
+            <select name="hobbies" id="hobbies" multiple>
+                <option value="None">-- Select --</option>
+                <option value="1">Playing Soccer</option>
+                <option value="2">Dancing</option>
+                <option value="3">Gardening</option>
+                <option value="4">Watching Movies</option>
+            </select> <br>
+
+            <label for="favCar">Fovourite Car</label>
+            <select name="favCar" id="favCar">
+                <option value="None">-- Select --</option>
+                <option value="1">Mercedes</option>
+                <option value="2">BMW</option>
+                <option value="3">Porche</option>
+                <option value="4">Tesla</option>
+            </select> <br>
+
+            <label for="publicTransport">Fovourite Public Transport</label>
+            <select name="publicTransport" id="publicTransport">
+                <option value="None">-- Select --</option>
+                <optgroup label="Ground">
+                    <option value="1">Train</option>
+                    <option value="2">Bus</option>
+                </optgroup>
+
+                <optgroup label="Water">
+                    <option value="3">Ship</option>
+                    <option value="4">Boat</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
