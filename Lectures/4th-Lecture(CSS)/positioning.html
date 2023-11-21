@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 5px solid black;
+            background-color: royalblue;
+            margin: auto;
+            padding: 15px;
+            width: 80%;
+            text-align: justify;
+        }
+
+        #relativePosition {
+            position: relative;
+            top: 150px;
+            left: 150px;
+            height: 350px;
+            border: 5px solid black;
+            background-color: coral;
+        }
+
+        #fixedPosition {
+            position: fixed;
+            bottom: 0;
+            right: 75px;
+            border: 5px solid black;
+            background-color: cadetblue;
+
+        }
+        
+        #absolutePosition {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            border: 5px solid black;
+            background-color: cadetblue;
+        }
+
+        #stickyPosition {
+            position: sticky;
+            top: 0;
+            border: 5px solid black;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Header 1</h1>
+        <p>
+            this paragraph is using margin: auto. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam a velit sapiente quisquam dolores veritatis
+            officia recusandae qui quaerat voluptatum quae enim consectetur aliquam aperiam magnam ullam earum quam
+            natus corporis veniam laudantium illo, itaque dolor. Rerum ex expedita commodi magni tenetur perferendis
+            recusandae nihil laboriosam, minus molestiae est eligendi.
+        </p>
+    </div>
+
+    <div id="relativePosition">
+        <h1>Header 1</h1>
+        <p>
+            This paragragh is usng relative positioning. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quaerat obcaecati a aliquam ut rerum
+            fugiat, dignissimos aut necessitatibus veniam officia odio maxime accusantium! Possimus deserunt pariatur
+            alias facere! Consequatur molestiae quaerat aut in enim asperiores tempora laborum cupiditate sunt ab,
+            repudiandae consectetur voluptas saepe veniam laudantium harum sequi facilis!
+        </p>
+
+        <div id="absolutePosition">
+            <h1>Header 1</h1>
+            <p>
+                This paragragh is usng absolute positioning. <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fugit dolorem neque quod quae natus magni veritatis repellat doloremque ut, voluptas officia quasi voluptate? Sed, blanditiis quas. Rerum, delectus? Magni sed unde accusamus, molestiae inventore dicta libero exercitationem odit, velit nesciunt alias voluptatum eaque quam pariatur necessitatibus! Animi, minima ex.
+            </p>
+        </div>
+    </div>
+
+    <div id="fixedPosition">
+        <h1>Header 1</h1>
+        <p>
+            This paragragh is usng fixed positioning. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas fugiat ratione aperiam rem impedit nihil. Adipisci blanditiis dolor quidem ipsa excepturi, optio dicta nisi deleniti tenetur atque praesentium reiciendis, suscipit vitae, nihil qui dolorum! Veniam vero omnis, rerum fuga non tempore iste accusamus perspiciatis porro, laborum tenetur obcaecati recusandae labore.
+        </p>
+    </div>
+
+    <!-- <div id="stickyPosition">
+        <h1>Header 1</h1>
+        <p>
+            This paragragh is usng sticky positioning. <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem neque explicabo, doloribus in quo ipsa aperiam, labore maiores minus maxime eaque ex quis quasi. Maxime ipsa iste quibusdam! Nam accusantium nesciunt dolores sapiente autem fugit laborum, eveniet libero nostrum praesentium animi quod aliquam impedit iure quos quaerat, sint earum accusamus.
+        </p>
+    </div> -->
+</body>
+
+</html>

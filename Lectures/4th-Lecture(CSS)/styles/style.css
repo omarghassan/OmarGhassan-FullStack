@@ -9,3 +9,10 @@ p {
 #mainParagraph {
     color: brown;
 }
+
+p.outlined {
+    padding: 0;
+    margin: 0;
+    border: 5px dotted royalblue;
+    outline: 5px solid black;
+}
