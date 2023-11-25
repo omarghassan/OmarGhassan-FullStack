@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#p1 {
+    height: 100px;
+    border: 5px solid black;
+    background-color: royalblue;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#p1:hover {
+    overflow: visible;
+    white-space: normal;
+    height: fit-content;
+}
+
+a:link {
+    color: navy;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+a:visited {
+    color: coral;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+#hello {
+    background-color: coral;
+    color: whitesmoke;
+    width: 100px;
+    padding: 20px;
+}
+
+#hello:hover {
+    transition: font-size, width 2s;
+    width: 400px;
+    font-size: 2em;
+}
