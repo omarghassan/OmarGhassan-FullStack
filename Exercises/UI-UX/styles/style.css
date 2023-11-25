@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container {
+    margin: auto;
+    max-width: 90%;
+    margin-top: 15px;
+
+}
+
+header h1 {
+    float: left;
+}
+
+header form {
+    float: right;
+    border: 2px solid transparent;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    clear: both;
+    background: linear-gradient(orange, yellow);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-size: 18px;
+}
+
+#p1 {
+    padding: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#p1 h1 {
+    padding: 15px 15px 15px 0;
+}
+
+#useful {
+    float: left;
+    width: 49.9%;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 1px;
+    height: 200px;
+}
+
+#useful ul li {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+#why {
+    float: right;
+    width: 49.9%;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#why ul li {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+footer {
+    clear: both;
+    height: 100px;
+    background-color: orange;
+    border-radius: 5px;
+    text-align: center;
+    padding: 35px;
+}
