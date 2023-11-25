@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #p1 {
+            height: 100px;
+            border: 5px solid black;
+            background-color: royalblue;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        p:hover {
+            overflow: visible;
+            white-space: normal;
+            height: fit-content;
+        }
+
+        a:link {
+            color: navy;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: coral;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-size: 35px;
+        }
+
+        #hello {
+            background-color: coral;
+            color: whitesmoke;
+            width: 100px;
+            padding: 20px;
+        }
+
+        #hello:hover {
+            transition: font-size, width 2s;
+            width: 400px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quo quia, ducimus earum vero enim asperiores fugiat necessitatibus in incidunt corporis sit rerum explicabo provident? Vero laborum, ipsam ea dolorum reprehenderit asperiores inventore quo officia consequatur sint laudantium exercitationem tempore dolorem atque temporibus aut doloribus sit nesciunt. Aperiam, assumenda saepe quia dolor nisi esse earum sint repellendus ut error quod neque quae excepturi animi exercitationem, accusamus dolore. Sit, cumque. Odio perspiciatis aliquid officiis eius animi voluptates ducimus illum nihil! Voluptate aperiam eius laborum quidem! Inventore quae non maxime eius nostrum aperiam, provident soluta. Aliquid fugit amet consequatur saepe corrupti tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at fuga quae quis laborum odio magni aut modi! Molestiae nam quas debitis amet ipsum temporibus magnam voluptates voluptatum nostrum eius laudantium minima sequi atque porro modi ut quisquam optio quaerat aspernatur, autem quibusdam odit? Praesentium nostrum nobis eligendi, cum cupiditate aliquam perferendis voluptate aperiam, ipsum tempore natus error enim. Ullam a odio eveniet ipsam ea libero eaque sed voluptate. Magnam aperiam est vitae et dolorum ipsum ducimus reprehenderit praesentium quod minus incidunt ratione commodi provident omnis nobis, dolor saepe eligendi! Ducimus, nulla suscipit magni sint sunt praesentium dolore exercitationem itaque corrupti quas accusantium, beatae officiis error consectetur atque? Sint non ab quo sapiente eaque error soluta vero. Delectus aliquid non ullam placeat, sit quos hic veniam accusamus iure ex quia voluptate eligendi harum aut corporis eveniet sunt quasi labore aperiam nostrum dolorum consequuntur. Cum rerum nihil consequatur sapiente dolores quasi perspiciatis commodi at, quos quibusdam quisquam aut voluptate velit id omnis a, modi accusamus sint hic fuga architecto magnam iste in. Officiis voluptatem, eum aliquam nulla, quaerat quae quidem enim delectus cumque inventore officia quibusdam? Aliquam maiores possimus adipisci, distinctio vel itaque temporibus dolore ratione autem iusto voluptates iste ea aperiam repellat ullam natus, sequi, tempore corrupti. Eligendi harum nesciunt excepturi rerum corrupti consectetur sunt voluptatibus voluptates dolore. Minima vitae delectus, temporibus tempore incidunt, voluptas ut ea eius facere in impedit accusamus a eaque hic ipsum totam ipsa iusto nemo odio ipsam quo, quae blanditiis? Obcaecati atque saepe dolorum explicabo.
+        </p>
+
+        <a href="#">Link 1</a>
+    </div>
+
+    <div id="hello">
+        <p>
+            Hello
+        </p>
+    </div>
+</body>
+</html>
