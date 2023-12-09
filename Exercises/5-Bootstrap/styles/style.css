@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#photoSlider {
+    max-width: 70%;
+    max-height: 50%;
+    margin: auto;
+}
+
+.carousel-caption {
+    background-color: whitesmoke;
+    opacity: 0.5;
+}
+
+#amman {
+    text-align: center;
+}
