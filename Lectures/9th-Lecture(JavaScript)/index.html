@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <h1>Welcome to JavaScript</h1>
+    <p id="p1">
+        inner HTML to be replaced
+    </p>
+    </div>
+
+    <button onclick="window.print()">Print</button>
+    <script>
+        console.log("Script written in HTML body");
+
+        document.write("<h2 id='heading2' style='color:black;'> This is a demo for JavaScript");
+        document.getElementById("p1").innerHTML = "<h3> Updated </h3>"
+
+        var1 = document.getElementById("div1").innerText;
+        document.write(var1);
+
+        
+        var2 = document.getElementById("div1").innerHTML;
+        document.write(var2)
+    </script>
+</body>
+</html>
