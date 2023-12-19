@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Classes</title>
+</head>
+<body>
+    <div>
+        <h1>JS Working with DOM</h1>
+        <p id="p1" class="paragragh">
+            Paragragh with the id attribute called p1
+        </p>
+        <p>Paragragh 2</p>
+        <p class="paragragh">Paragragh 3</p>
+        <p class="demo">
+            JS can change HTML content
+        </p>
+        <button onclick="document.getElementsByTagName('p')[3].innerHTML = 'JS Changed'">Click me</button>
+
+        <p id="demo">
+            JavaScript can change HTML content
+        </p>
+        <button onclick="changeContent()">Click Me</button>
+    </div>
+    <script src="scripts/DOM.js"></script>
+</body>
+</html>
