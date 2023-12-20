@@ -3,7 +3,7 @@ x.style.color = "red";
 
 var y = document.getElementsByTagName("p");
 var text = y[0].innerHTML;
-document.writeln(text)
+document.writeln(text + '<br>')
 
 for (var i = 0; y < y.length; i++) {
     y[i].style.color = "red";
@@ -11,7 +11,7 @@ for (var i = 0; y < y.length; i++) {
 
 var z = document.getElementsByClassName("paragragh");
 var text = z[0].innerHTML;
-document.writeln(text);
+document.writeln(text + '<br>');
 
 for (var i = 0; i < z.length; i++) {
     z[i].style.color = "coral"
@@ -30,3 +30,11 @@ function changeContent() {
     document.querySelector("#demo").innerHTML = "JavaScript Changed The Content";
     document.querySelector("#demo").style.color = "violet"
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#btn1").addEventListener("click", function () {
+        var x = document.querySelectorAll("p")
+        x[0].style.backgroundColor = "whitesmoke"
+        x[1].style.backgroundColor = "violet"
+    })
+})
