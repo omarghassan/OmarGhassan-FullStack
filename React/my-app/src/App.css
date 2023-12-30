@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +33,31 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Navbar ul {
+  background-color: #1c2433;
+  color: whitesmoke;
+  display: flex;
+  padding: 25px;
+}
+
+.Navbar ul li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+footer {
+  padding: 35px;
+  background-color: #1c2433;
+  color: whitesmoke;
+}
+
+
+.btn-click {
+  padding: 15px;
+  width: 100px;
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
