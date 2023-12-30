@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    padding: 25px;
+}
+
+.demoClass {
+    color: violet;
+}
+
+.heading2 {
+    color: cornflowerblue;
+}
