@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  padding: 25px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-list h1 {
+  color: royalblue;
+}
+
+.blog-list .blog-info{
+  padding: 25px;
+}
+
+.blog-list .blog-info h2{
+  color: violet
+}
