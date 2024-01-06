@@ -1,0 +1,22 @@
+{
+    "employess": [
+        {
+            "id": 1, 
+            "name": "Omar",
+            "jobTitle": "Full Stack Developer",
+            "salary": 850
+        },
+        {
+            "id": 2, 
+            "name": "Yazan",
+            "jobTitle": "Quality Assurance Engineer",
+            "salary": 750
+        },
+        {
+            "id": 3, 
+            "name": "Moath",
+            "jobTitle": "Technical Support Engineer",
+            "salary": 450
+        }
+    ]
+}

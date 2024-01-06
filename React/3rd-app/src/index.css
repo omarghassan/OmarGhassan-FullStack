@@ -8,8 +8,36 @@
 }
 
 body {
+  padding: 25px;
   background-color: black;
   color: whitesmoke;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-list h1 {
+  color: royalblue;
+}
+
+.blog-list .blog-info{
+  padding: 25px;
+}
+
+.blog-list .blog-info h2{
+  color: violet
+}
+
+nav {
+  padding: 7px;
+  background-color: cornflowerblue;
+  height: 50px;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav .Links {
+  float: right;
+  margin-right: 15px;
 }
