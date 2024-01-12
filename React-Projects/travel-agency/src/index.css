@@ -3,3 +3,32 @@
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+body {
+  background-color: #282d32;
+  color: whitesmoke;
+}
+
+#home-page-paragraph {
+  padding: 25px;
+  text-align: justify;
+}
+
+#home-page-paragraph h2 {
+  text-transform: uppercase;
+}
+
+#card {
+  height: 175px;
+}
+
+.card {
+  text-align: justify;
+  background-color: lightgrey;
+  margin: 10px;
+}
+
+#countries-paragraph {
+  padding: 25px;
+  text-align: justify;
+}
