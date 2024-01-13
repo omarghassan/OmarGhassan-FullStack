@@ -6,6 +6,7 @@ import Create from "./Create";
 import PageNotFound from "./PageNotFound";
 import About from "./pages/About";
 import BlogDetails from "./BlogDetails";
+import EditBlog from "./EditBlog";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/create" element={<Create />}></Route>
             <Route path="/pages/about" element={<About />}></Route>
             <Route path="/blogs/:id" element={<BlogDetails />}></Route>
+            <Route path="/editBlog/:id" element={<EditBlog />}></Route>
             <Route path="/*" element={<PageNotFound />}></Route>
           </Routes>
         </div>
