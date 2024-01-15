@@ -1,0 +1,22 @@
+{
+    "offers": [
+        {
+            "id": 1,
+            "destination": "Riyadh",
+            "season": "winter",
+            "rangeOfPrices": "$400 - $900"
+        },
+        {
+            "id": 2,
+            "destination": "Madrid",
+            "season": "spring",
+            "rangeOfPrices": "$1200 - $1800"
+        },
+        {
+            "id": 1,
+            "destination": "Switzerland",
+            "season": "winter",
+            "rangeOfPrices": "$800 - $1500"
+        }
+    ]
+}
