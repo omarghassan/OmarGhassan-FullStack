@@ -1,0 +1,1 @@
+const students = ["Omar", "Samer", "Yazan", "Faisal", "Moath"]
