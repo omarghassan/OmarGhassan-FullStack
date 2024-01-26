@@ -16,7 +16,7 @@ const server = http.createServer((request, response) => {
         // path+= "index.html";
         fs.readFile("./views/index.html", (error, data) => {
             if (error) {
-                console.log(err)
+                // console.log(err)
                 response.end()
             } else {
                 response.statusCode = 200
@@ -28,7 +28,19 @@ const server = http.createServer((request, response) => {
         // path+= "path.html"
         fs.readFile("./views/about.html", (error, data) => {
             if (error) {
-                console.log(err)
+                // console.log(err)
+                response.end()
+            } else {
+                response.statusCode = 200
+                response.write(data)
+                response.end()
+            }
+        })
+    } else if (request.url == "/bootstrap") {
+        // path+= "path.html"
+        fs.readFile("./views/bootstrap.html", (error, data) => {
+            if (error) {
+                // console.log(err)
                 response.end()
             } else {
                 response.statusCode = 200
@@ -39,7 +51,7 @@ const server = http.createServer((request, response) => {
     } else {
         fs.readFile("./views/notFound.html", (error, data) => {
             if (error) {
-                console.log(err)
+                // console.log(err)
                 response.end()
             } else {
                 response.statusCode = 404
