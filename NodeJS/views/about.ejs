@@ -29,28 +29,39 @@
 
 <body>
     <%- include ('../partials/nav.ejs') %>
-    <h1>About Us</h1>
-    <h3>About Us Content</h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minima earum non accusamus soluta, excepturi
-        doloremque modi iusto distinctio molestias praesentium rem perferendis consequuntur rerum veniam illo explicabo
-        voluptatibus, temporibus repudiandae quo harum fugiat eaque dolorem inventore! Harum, et totam quis tempore esse
-        nulla pariatur commodi beatae quos, necessitatibus adipisci?
-    </p>
+        <!-- <h1>About Us</h1>
+        <h3>About Us Content</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minima earum non accusamus soluta, excepturi
+            doloremque modi iusto distinctio molestias praesentium rem perferendis consequuntur rerum veniam illo
+            explicabo
+            voluptatibus, temporibus repudiandae quo harum fugiat eaque dolorem inventore! Harum, et totam quis tempore
+            esse
+            nulla pariatur commodi beatae quos, necessitatibus adipisci?
+        </p> -->
 
-    <% if(blogs.length> 0) {%>
+        <h2 class="blogs-title">
+            <%= title %>
+        </h2>
 
-        <% blogs.forEach(blog=> { %>
-            <h3>
-                <%= blog.title %>
-            </h3>
-            <p>
-                <%= blog.content %>
-            </p>
-            <% }); %>
-                <% } else { %>
-                    <h3>There are no blogs to show</h3>
-                    <% } %>
+        <% if(blogs.length> 0) {%>
+
+            <% blogs.forEach(blog=> { %>
+                <div class="blog-info">
+                    <h3>
+                        <%= blog.title %>
+                    </h3>
+                    <h4>
+                        <%= blog.author %>
+                    </h4>
+                    <p>
+                        <%= blog.content %>
+                    </p>
+                </div>
+                <% }); %>
+                    <% } else { %>
+                        <h3>There are no blogs to show</h3>
+                        <% } %>
 </body>
 
 </html>

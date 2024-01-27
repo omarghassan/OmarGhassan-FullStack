@@ -1,12 +1,63 @@
 const express = require("express");
+const morgan = require("morgan")
+const mongoose = require("mongoose")
+const Blog = require("./models/blogs")
 
 const app = express();
+
+const dbURI = 'mongodb+srv://root:12345@omarcluster.wfgmony.mongodb.net/BlogsDB'
+
+mongoose.connect(dbURI).then((result) => {
+    app.listen(3000);
+    app.use(morgan("dev"))
+    console.log("Connected to the Database")
+}).catch((err) => {
+    console.log(err)
+})
 
 app.set("view engine", "ejs")
 app.use(express.static("assets"))
 app.use(express.static("styles"))
 
-app.listen(3000);
+app.use((request, response, next) => {
+    // console.log("New Middleware is made.")
+    // console.log("Host: ", request.hostname)
+    // console.log("Method: ", request.method)
+    // console.log("URL: ", request.url)
+    next()
+})
+
+app.get("/add-blog", (request, response) => {
+    
+    const blog = new Blog ({
+        title: "Blog 2",
+        author: "Author 2",
+        content: "Blog 2 Content"
+    });
+    blog.save().then((result) => {
+        response.send(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+
+app.get("/all-blogs", (request, response) => {
+    
+    Blog.find().then((result) => {
+        response.send(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+
+app.get("/blogByID", (request, response) => {
+    
+    Blog.findById("65b43177c60fe4d087cb16ea").then((result) => {
+        response.send(result)
+    }).catch((error) => {
+        console.log(error)
+    })
+})
 
 app.get("/", (request, response) => {
     // response.send("<h1> Hello From Express </h1>");
@@ -18,13 +69,20 @@ app.get("/", (request, response) => {
 app.get("/about", (request, response) => {
     // response.sendFile("./views/about.html", { root: __dirname })
 
-    const title = "About Page Title Retrieved from App.js"
-    const blogs = [
-        { title: "Blog 1", content: "Blog 1 Content" },
-        { title: "Blog 2", content: "Blog 2 Content" },
-        { title: "Blog 3", content: "Blog 3 Content" }
-    ]
-    response.render("about", { title, blogs })
+    // const title = "About Page Title Retrieved from App.js"
+    // const blogs = [
+    //     { title: "Blog 1", content: "Blog 1 Content" },
+    //     { title: "Blog 2", content: "Blog 2 Content" },
+    //     { title: "Blog 3", content: "Blog 3 Content" }
+    // ]
+
+    Blog.find().then((result) => {
+        // response.send(result)
+        const title = "All Blogs"
+        response.render("about", { title, blogs: result })
+    }).catch((error) => {
+        console.log(error)
+    })
 })
 
 app.get("/blogs/create", (request, response) => {

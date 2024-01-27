@@ -17,3 +17,20 @@
     text-decoration: none;
     color: black;
 }
+
+.blog-info {
+    border: 5px solid orangered;
+    border-radius: 5px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.blog-info *{
+    text-align: center;
+}
+
+.blogs-title {
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+}
