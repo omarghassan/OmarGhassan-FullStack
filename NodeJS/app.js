@@ -18,6 +18,7 @@ mongoose.connect(dbURI).then((result) => {
 app.set("view engine", "ejs")
 app.use(express.static("assets"))
 app.use(express.static("styles"))
+app.use(express.urlencoded({ extended: true }));
 
 app.use((request, response, next) => {
     // console.log("New Middleware is made.")
@@ -27,9 +28,40 @@ app.use((request, response, next) => {
     next()
 })
 
+app.post("/new-blog", (request, response) => {
+    console.log("New Post Request is Made")
+    console.log(request.body)
+
+    const blog = new Blog(request.body)
+    blog.save().then((result) => {
+        response.redirect("/about")
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+
+app.get("/blogs/:id", (request, response) => {
+    const id = request.params.id;
+    Blog.findById(id).then((result) => {
+        response.render("blogInfo", {title: "Blog Info", blog: result});
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+
+
+app.get("/delete-blog/:id", (request, response) => {
+    const id = request.params.id;
+    Blog.findByIdAndDelete(id).then((result) => {
+        response.redirect("/about")
+    }).catch((error) => {
+        console.log(error)
+    })
+})
+
 app.get("/add-blog", (request, response) => {
-    
-    const blog = new Blog ({
+
+    const blog = new Blog({
         title: "Blog 2",
         author: "Author 2",
         content: "Blog 2 Content"
@@ -42,22 +74,22 @@ app.get("/add-blog", (request, response) => {
 })
 
 app.get("/all-blogs", (request, response) => {
-    
-    Blog.find().then((result) => {
+
+    Blog.find().sort({ createdAt: -1 }).then((result) => {
         response.send(result)
     }).catch((error) => {
         console.log(error)
     })
 })
 
-app.get("/blogByID", (request, response) => {
-    
-    Blog.findById("65b43177c60fe4d087cb16ea").then((result) => {
-        response.send(result)
-    }).catch((error) => {
-        console.log(error)
-    })
-})
+// app.get("/blogByID", (request, response) => {
+
+//     Blog.findById("65b43177c60fe4d087cb16ea").then((result) => {
+//         response.send(result)
+//     }).catch((error) => {
+//         console.log(error)
+//     })
+// })
 
 app.get("/", (request, response) => {
     // response.send("<h1> Hello From Express </h1>");
@@ -76,7 +108,7 @@ app.get("/about", (request, response) => {
     //     { title: "Blog 3", content: "Blog 3 Content" }
     // ]
 
-    Blog.find().then((result) => {
+    Blog.find().sort({ createdAt: -1 }).then((result) => {
         // response.send(result)
         const title = "All Blogs"
         response.render("about", { title, blogs: result })
@@ -85,7 +117,7 @@ app.get("/about", (request, response) => {
     })
 })
 
-app.get("/blogs/create", (request, response) => {
+app.get("/create", (request, response) => {
     // response.sendFile("./views/about.html", { root: __dirname })
     response.render("create")
 })

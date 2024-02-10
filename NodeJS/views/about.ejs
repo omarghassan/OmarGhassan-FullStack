@@ -7,22 +7,9 @@
     <title>About Page</title>
     <link rel="stylesheet" href="app.css">
     <style>
-        * {
-            /* padding: 0;
-            margin: 0; */
-            box-sizing: border-box;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
         body {
             background-color: black;
             color: whitesmoke;
-            padding: 25px;
-            margin: 25px;
-        }
-
-        p {
-            text-align: justify;
         }
     </style>
 </head>
@@ -57,6 +44,8 @@
                     <p>
                         <%= blog.content %>
                     </p>
+
+                    <a href="blogs/<%= blog.id %>">Blog Details</a>
                 </div>
                 <% }); %>
                     <% } else { %>

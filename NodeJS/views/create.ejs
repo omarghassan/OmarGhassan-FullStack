@@ -5,28 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Blog </title>
+    <link rel="stylesheet" href="/app.css">
 </head>
 
 <body>
-    <nav>
-        <div class="site-logo">
-            <a href="/"> Node.js </a>
-            <p> This website is created using node.jsand express.js</p>
-        </div>
-        <ul>
-            <li><a href="/"> Blogs </a></li>
-            <li><a href="/about"> About </a></li>
-            <li><a href="/blogs/create"> New Blog </a></li>
-        </ul>
-    </nav>
-    <div class="new-blog ">
-        <form>
+    <%- include ('../partials/nav.ejs') %>
+    <div class="new-blog">
+        <form action="/new-blog" method="post">
             <label for="title"> Blog Title</label>
-            <input type="text" id="title" required>
+            <input type="text" id="title" name="title" required>
             <label for="author"> Blog Author</label>
-            <input type="text" id="author" required>
+            <input type="text" id="author" name="author" required>
             <label for="content"> Blog content</label>
-            <textarea id="content" required> </textarea>
+            <textarea id="content" name="content" required> </textarea>
             <button> Add </button>
         </form>
     </div>
