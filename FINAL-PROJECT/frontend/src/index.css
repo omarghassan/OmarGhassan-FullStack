@@ -1,0 +1,58 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer .bi {
+  color: white;
+  font-size: 150%;
+}
+
+.about {
+  margin: 5%;
+}
+
+.about .bi {
+  color: black;
+  font-size: 300%;
+}
+
+.dashboard {
+  margin: 3%;
+}
+
+.dashboard .title {
+  text-align: center;
+}
+
+.dashboard .card {
+  margin: 2.5%;
+}
+
+.dashboard .dashboard-heading .btn {
+  margin-left: 78%;
+  position: absolute;
+}
+
+.all-Tasks {
+  margin: 3%;
+}
+
+.all-Tasks .title {
+  text-align: center;
+}
+
+.all-Tasks .card {
+  margin: 2.5%;
+}
+
+.all-Tasks .btn {
+  margin: 2.5px;
+}
+
+.addTaskForm {
+  margin: 5%;
+}
+
+.editTaskForm {
+  margin: 5%;
+}
