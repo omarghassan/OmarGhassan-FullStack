@@ -1,3 +1,5 @@
+import taskies from "../Assets/Taskies.png"
+
 const About = () => {
 
     return (
@@ -9,6 +11,9 @@ const About = () => {
                         <p style={{ textAlign: "justify" }}>
                             Welcome to Taskies, your one-stop solution for managing tasks efficiently and effectively. Taskies is designed to help you streamline your workflow, increase productivity, and stay organized. Our user-friendly interface allows you to easily create and track tasks, ensuring you never lose sight of your responsibilities. Whether you're juggling multiple projects or simply trying to stay on top of your daily to-do list, Taskies offers the simplicity and flexibility you need. Start simplifying your task management today with Taskies.
                         </p>
+                    </div>
+                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src={taskies} alt="Taskies Logo" style={{ width: "300px", height: "300px" }} />
                     </div>
                     <div className="col-md-6">
                         <h2>Follow Us</h2>

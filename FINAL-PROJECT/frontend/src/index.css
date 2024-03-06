@@ -60,3 +60,18 @@ footer .bi {
 .auth-page .btn {
   margin-top: 9px;
 }
+
+.pageNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+}
+
+.pageNotFound .pageNotFound-content {
+  text-align: center
+}
+
+.pageNotFound h1 {
+  color: red;
+}
