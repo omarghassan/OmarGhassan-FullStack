@@ -2,6 +2,7 @@ require("dotenv").config()
 const express = require("express");
 
 const tasksRouter = require("./routes/tasks")
+const usersRouter = require("./routes/users")
 
 const mongoose = require("mongoose")
 
@@ -16,6 +17,7 @@ app.use((request, response, next) => {
 })
 
 app.use("/", tasksRouter)
+app.use("/auth", usersRouter)
 
 mongoose.connect(process.env.dbURI).then(() => {
     console.log("Connected to the Database Successfully")

@@ -7,6 +7,7 @@ import TasksList from "./Pages/TasksList";
 import AddTask from "./Pages/AddTask";
 import EditTask from "./Pages/EditTask";
 import Sitemap from "./Pages/Sitemap";
+import AuthPage from "./Pages/AuthPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/addtask" element={<AddTask />} ></Route>
             <Route path="/edittask/:id" element={<EditTask />} ></Route>
             <Route path="/sitemap" element={<Sitemap />} ></Route>
+            <Route path="/auth" element={<AuthPage />} ></Route>
           </Routes>
         </div>
         <Footer></Footer>

@@ -56,3 +56,7 @@ footer .bi {
 .editTaskForm {
   margin: 5%;
 }
+
+.auth-page .btn {
+  margin-top: 9px;
+}
